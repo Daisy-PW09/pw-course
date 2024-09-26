@@ -21,13 +21,13 @@
 - Các file chuẩn bị commit 
 3. Repository 
 - Các commit (phiên bản)
-## Các câu lệnh thườno gặp 
+## Các câu lệnh thường gặp 
 ### 1. Git init
 - Khởi tạo 3 vùng trạng thái 
 - Tất cả các file trong folder sẽ nằm trong vùng Working Directory 
 ### 2. Git add <tên file>
 - Thêm file nào đó từ vùng working directory sang staging area
-### 3. Git add. 
+### 3. Git add . 
 - Thêm tất cả các file trong folder từ vùng working directory sang staging area 
 ### 4. Git commit -m"commit message" 
 - Chuyển file từ vùng staging sang repository 

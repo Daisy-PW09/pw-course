@@ -9,7 +9,7 @@
 
 // a. Khai báo chiều cao của bạn (cm) 
 const height = 170;
-const oddHeight = height - 100;
+const oddHeight = height % 100;
 const idealWeight = (oddHeight * 9) / 10
 const maxWeight = oddHeight;
 const minWeight = (oddHeight * 8) / 10
