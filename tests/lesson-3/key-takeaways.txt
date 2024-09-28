@@ -1,0 +1,80 @@
+#Git - Undo things
+1. git log: xem lịch sử commit 
+  => Nhấn phím q để thoát ra phần xem log 
+2. git commit --amend -m"commit message" : thay đổi commit message 
+3. git commit --amend 
+   - Gõ i -> vào chế độ ínsert để thay đổi nội dung commit
+   - Gõ esc để thoát chế độ insert 
+   - Gõ ":wp" -> write and quit 
+4. git restore --staged <file> : đưa file từ vùng staging về working directory 
+5. git restore --staged . : đưa tất cả file từ staging về working directory
+6. git reset HEAD~1 : đưa 1 file commit gần nhất (vì HEAD~1) từ vùng repository về working directory 
+7. git add <đường dẫn file1> <đường dẫn file2> : để add nhiều file cùng lúc 
+
+#Git - Branching model 
+1. Branch = nhánh 
+   - Dùng branch để tạo ra 1 vùng làm việc mới, không ảnh hưởng đến vùng ổn định (main)
+   - Cú pháp: 
+       git branch: check xem đang ở nhánh nào 
+       git branch <ten_branch> : tạo branch mới 
+       git checkout <ten_branch> : chuyển sang branch đã tạo 
+       git checkout -b <ten_branch> : tạo nhánh mới và chuyển sang nhánh đó 
+    Tips: Luôn tạo branch mới trước khi thực hiện 1 lệnh copy từ internet (tránh mất code nhánh hiện tại, test oke rồi thì back về nhánh chính)
+2. Git ignore: không upload file này lên git 
+   - Tạo file .gitignore 
+   - Add những file cần ignore 
+     Ex: password.txt
+         pass/account1.txt
+         lesson-2/ : đây là 1 folder và git sẽ bỏ qua toàn bộ file trong folder 
+#Javascript
+1. Conventions: 
+   - snake_case: chưa dùng 
+   - kebab-case: tên file 
+   - camelCase: tên biến 
+   - PascalCase: tên class 
+2. console.log with ' or "
+   Ex: conssole.log ('Tu Anh');
+       console.log ("Tu Anh");
+       console.log (`Ten hoc sinh la: ${ten_bien}`);
+3. Object
+   - Đối tượng lưu trữ tập hợp các giá trị có cùng biến hoặc hằng số 
+   - Cú pháp: 
+     let/const <ten_object> = {
+        <thuoc_tinh> : <gia_tri> ,
+        ....
+     }
+     - <thuoc_tính> : giống quy tắc đặt tên biến 
+     - <gia_tri>: có kiểu giống biến, hoặc là 1 object khác 
+    - Sử dụng
+    + Dùng dấu . để lấy ra thuộc tính của object (student.name)
+    + Dùng [""] để lấy ra thuộc tính (student["name"]) => dùng khi tên thuộc tính có dấu khoảng trắng 
+    - Gán lại thuộc tính cho biến 
+      Cú pháp: tenbien.thuoctinh = "value" 
+      Note: constant là hằng số nhưng vẫn gán được giá trị khác cho thuộc tính, không thể thay đổi được cả object 
+   - Thêm thuộc tính mới vào object 
+     + Dùng dấu . hoặc ngoặc vuông [] để định nghĩa thuộc tính mới.
+       <ten_bien>.<thuoc_tinh_moi>
+   - Xoá thuộc tính của biến 
+     + Cú pháp: delete <ten_bien>.<ten_thuoc_tinh>
+4. Logical Operator 
+   - && : Cả 2 vế của mệnh đều đúng thì sẽ trả về đúng
+   - ||; 1 trong 2 vế đúng 
+   - !: đảo ngược giá trị mệnh đề 
+5. Vòng lặp for ... in 
+   - Vòng lặp for…in có thể dùng để lặp các thuộc tính của object. 
+   - Cú pháp: for (let <thuọc_tinh> in <ten_bien>) {
+      // code 
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
