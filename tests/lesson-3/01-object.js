@@ -31,37 +31,37 @@ console.log("Math = " + student["grades"]["math"]);
 
 // Tạo một object product với các thuộc tính là tên các sản phẩm và giá trị là giá của chúng. Dùng vòng lặp for...in để in ra tên và giá của mỗi sản phẩm. 
 let product = {
-    "Bread" : 30000,
-    "Ice Coffee" : 25000,
-    "Milk Tea" : 50000
+    "Bread": 30000,
+    "Ice Coffee": 25000,
+    "Milk Tea": 50000
 };
 
-for (let items in product){
-    console.log (items + " " + product[items] + " " + "VND");
+for (let items in product) {
+    console.log(items + " " + product[items] + " " + "VND");
 }
 // Tạo một object settings để quản lý cài đặt của ứng dụng với các thuộc tính như volume, brightness. Thay đổi volume và in ra object mới. 
 const settings = {
-    volume : 300,
-    brightness : 100
+    volume: 300,
+    brightness: 100
 };
 settings.volume = 200;
-console.log ("Volume: " + settings["volume"]);
+console.log("Volume: " + settings["volume"]);
 
 // 6. Tạo một object bike và sau đó thêm thuộc tính color vào object đó 
 let bike = {
-    brand : 'Trek',
-    model : 'AXS',
+    brand: 'Trek',
+    model: 'AXS',
 };
 bike.color = "Red";
-console.log (bike);
+console.log(bike);
 
 // Tạo một object employee với các thuộc tính: name, age và xóa thuộc tính age khỏi object này 
 const employee = {
-    "name" : 'Tu Anh',
-    "age" : 31
+    "name": 'Tu Anh',
+    "age": 31
 }
 delete employee.age;
-console.log (employee);
+console.log(employee);
 
 //Một trường học có các lớp học và học sinh như sau: 
 // classA: An, Bình, Châu 
@@ -76,4 +76,4 @@ const school = {
     classA: ["An", "Bình", "Châu"],
     classB: ["Đào", "Hương", "Giang"]
 }
-console.log (school);
+console.log(school);
