@@ -53,7 +53,7 @@
       Note: constant là hằng số nhưng vẫn gán được giá trị khác cho thuộc tính, không thể thay đổi được cả object 
    - Thêm thuộc tính mới vào object 
      + Dùng dấu . hoặc ngoặc vuông [] để định nghĩa thuộc tính mới.
-       <ten_bien>.<thuoc_tinh_moi>
+       <ten_bien>.<thuoc_tinh_moi> = "value"
    - Xoá thuộc tính của biến 
      + Cú pháp: delete <ten_bien>.<ten_thuoc_tinh>
 4. Logical Operator 
@@ -65,6 +65,53 @@
    - Cú pháp: for (let <thuọc_tinh> in <ten_bien>) {
       // code 
    }
+6. Array
+   - Chứa các phần tử giống nhau - nên khai báo mảng với các phần tử cùng kiểu dữ liệu
+   - Truy xuất mảng theo độ dài mảng (length)
+   - Lấy phần tử theo index [0], [1], [2]
+7. Function 
+   - Là một đoạn code được đặt tên và có thể reuse, thực hiện 1 nhiệm vụ hoặc tính toán cụ thể 
+   - Hàm có thể ko có, có 1 hoặc nhiều tham số (parameter)
+   - Cú pháp 
+     function <nameFunction> () {
+      //code 
+     }
+     Ex: function tuAnh (name,age,address){
+      console.log ('xin chao: ${name} , tuoi: ${age} , dia chi: ${address}`);
+     }
+     call function: tuAnh (TuAnh, 30, HCM);
+     Ex: return value 
+     function sumOfValue (a,b){
+      return a + b;
+     }
+     console.log (sumOfValue(1,2));
+8. Operator: == and != 
+   - Khi so sánh === or !== là sẽ so sánh tuyệt đối và luôn kiểu dữ liệu, == or != convert thành cùng kiểu dữ liệu lớn hơn 
+   kiểu dữ liệu còn lại rồi so sánh (lỏng lẻo)
+9. If ..... else 
+10. If .... else if .... if 
+11. Switch .... case (break)
+    default 
+12. forEach (chỉ dùng cho array)
+   Ex: arr.forEach(item => {
+      console.log (item);
+   })
+13. for ... in (dùng cho array or object -> sẽ trả kết quả là key) 
+    Ex: const arr = [1, 300, 200, 101]
+    for (let item in arr){
+      console.log (item);
+    }
+    Result: thứ tự của phần từ là 0,1,2,3 
+    Nếu muốn hiển thị giá trị 
+   for (let item in arr){
+      console.log (arr[item]);
+    }
+14. for ... of (dùng cho array -> trả kết qủa là giá trị )
+15. Flow control: break - continue 
+- Condition - break (thoát vòng lặp khi gặp break) => dùng để tối ưu code 
+- Condition - continue (bỏ qua vòng lặp)
+
+
 
 
 
