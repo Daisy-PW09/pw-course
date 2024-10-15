@@ -55,9 +55,13 @@ test("Personnel Notes", async ({ page }) => {
             await page.locator("//textarea[@id='note-content']").fill(item.content);
             await page.click("//button[@id='add-note']");
         }
-        await test.step("Thao tac search theo tieu de bat ky ", async () => {
-            await page.locator("//input[@id='search']").fill("Quá trình lấy lại màu sắc cho đội quân đất nung bất tử");
+        for (const item of notes){
+            await expect(page.locator("//input[@id='note-title']")).toHaveText(item.title);
+            await expect(page.locator("//textarea[@id='note-content']")).toHaveText(item.content);  
+        }
         });
+        await test.step("Thao tac search theo tieu de bat ky ", async () => {
+        await page.locator("//input[@id='search']").fill("Quá trình lấy lại màu sắc cho đội quân đất nung bất tử");
         await expect(page.locator("//div/strong[contains(text(), 'Quá trình lấy lại màu sắc cho đội quân đất nung bất tử')]")).toBeVisible();
     });
 })
